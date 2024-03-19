@@ -1,0 +1,17 @@
+<!-- Container for Upcoming Angular Events -->
+
+<div>
+    <!-- Heading for Upcoming Angular Events -->
+    <h2>Upcoming Angular Events</h2>
+    <!-- Horizontal line as a visual separator -->
+    <hr>
+
+    <div class="row">
+        <div *ngFor="let event of events" class="col-md-5">
+            <!-- Note: This assumes that there is a component named 'event-thumbnail' -->
+            <event-thumbnail (click)="handleThumbnailClick(event.name)" [event]="event"></event-thumbnail>
+        </div>
+    </div>
+    <!-- Line break for better spacing -->
+    <br>
+</div>

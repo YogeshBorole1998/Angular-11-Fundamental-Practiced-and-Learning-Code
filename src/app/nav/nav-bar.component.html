@@ -1,0 +1,55 @@
+<!-- Navigation Bar with Bootstrap -->
+
+<div class="navbar navbar-default">
+    <div class="container-fluid">
+
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <!-- Brand/logo -->
+            <a class="navbar-brand">ngEvents</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse">
+
+            <!-- Navigation links -->
+            <ul class="nav navbar-nav">
+                <li><a [routerLink]="['/events']" routerLinkActive="active"
+                        [routerLinkActiveOptions]="{exact: true}">All Events</a></li>
+                <li><a [routerLink]="['/events/new']" routerLinkActive="active">Create Event</a></li>
+                <!-- Dropdown menu -->
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                        Events
+                        <span class="caret"></span>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="">Angular Connect</a></li>
+                    </ul>
+                </li>
+            </ul>
+
+            <!-- Right-aligned elements -->
+            <div class="navbar-header navbar-right">
+                <ul class="nav navbar-nav">
+                    <li>
+                        <a *ngIf="!auth.isAuthenticated()" [routerLink]="['user/login']">Login</a>
+                        <a *ngIf="auth.isAuthenticated()" [routerLink]="['user/profile']">Welcome
+                            {{auth.currentUser.firstName}}</a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Search form -->
+            <form id="searchForm" class="navbar-form navbar-right">
+                <div class="form-group">
+                    <input type="text" class="form-control" placeholder="Search Sessions">
+                </div>
+                <button class="btn btn-default">
+                    Search
+                </button>
+            </form>
+
+        </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+</div>

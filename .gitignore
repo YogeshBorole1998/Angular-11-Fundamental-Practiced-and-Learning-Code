@@ -1,0 +1,7 @@
+# Compiled files
+node_modules
+
+# IDE files
+.angular
+.vscode
+
