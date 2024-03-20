@@ -29,6 +29,7 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 <a href="Angular-11-Fundamental-Notes.pdf" target="_blank">Refer Angular-11 Notes</a>
 
 <hr>
+
 ## UI Overview-Angular-App
 
 1. Main Events Page :
