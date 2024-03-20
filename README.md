@@ -1,7 +1,4 @@
 # Angular-11-Fundamental-Practiced-and-Learning-Code
- Learned Angular basics : components, routing, services, forms, HTTP, observables, &amp; testing. Build websites confidently.
-<<<<<<< HEAD
-# Angular11Fundamental
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.1.8.
 
@@ -25,10 +22,26 @@ Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.
 
 Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
 
-## Further help
+## Refer : 
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
-=======
-# Angular-11-Fundamental-Practiced-and-Learning-Code
- Learned Angular basics : components, routing, services, forms, HTTP, observables, &amp; testing. Build websites confidently.
->>>>>>> origin/main
+[Angular-11 Free Course : Jim Cooper & Joe Eames](https://app.pluralsight.com/library/courses/angular-fundamentals)
+
+## UI Overview-Angular-App 
+
+1. Main Events Page : 
+image.png
+
+2. Create Events Page :
+image.png
+
+3. Login Profile Page :
+image.png
+
+4. Update Profile Page :
+image.png
+
+5. Event Detail Page :
+image.png
+
+## Unit Tests Report 
+image.png
