@@ -1,6 +1,10 @@
-# ◼️Angular-11-Fundamental :
+# ◼️Angular Events Application :
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.1.8.
+
+<hr>
+➡️ You can access the deployed version of this project [here](https://angular-events-app.netlify.app/)
+<hr>
 
 ## Development server
 
