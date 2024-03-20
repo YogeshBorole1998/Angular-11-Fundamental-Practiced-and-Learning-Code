@@ -1,6 +1,5 @@
 // Importing necessary decorators and modules from Angular core
 import { Component, Input } from '@angular/core';
-import { IEvent } from './shared';
 
 // Component decorator configuration
 @Component({
@@ -65,7 +64,7 @@ export class EventsThumbnailAppComponent {
     console.log('Demo String..!!');
   }
 
-  someProperty: any = 'Some value';
+  someProperty: string = 'Some value';
 
   getStartTimeStyle() {
     if (this.event && this.event?.time === '8:00 am') {

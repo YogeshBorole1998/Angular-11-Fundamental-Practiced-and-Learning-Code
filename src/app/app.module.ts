@@ -35,7 +35,6 @@ import {
 } from './events/index';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { AuthService } from './user/auth.service';
-import { HttpClientModule } from '@angular/common/http';
 
 // NgModule decorator configuration
 @NgModule({
@@ -62,7 +61,6 @@ import { HttpClientModule } from '@angular/common/http';
     AppRoutingModule,
     NgbModule,
     FormsModule,
-    HttpClientModule,
     ReactiveFormsModule,
     RouterModule.forRoot(appRoutes),
   ],

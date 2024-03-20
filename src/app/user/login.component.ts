@@ -16,13 +16,13 @@ import { AuthService } from './auth.service';
   ],
 })
 export class LoginComponent {
-  userName: any;
-  password: any;
-  mouseoverLogin: any;
+  userName: string = '';
+  password: string = '';
+  mouseoverLogin: boolean = false;
 
   constructor(private authService: AuthService, private router: Router) {}
 
-  login(formValues: any) {
+  login(formValues: { userName: string; password: string }) {
     this.authService.loginUser(formValues.userName, formValues.password);
     this.router.navigate(['events']);
   }

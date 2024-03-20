@@ -13,10 +13,10 @@ import { FormGroup, NG_VALIDATORS, Validator } from '@angular/forms';
 })
 export class ValidateLocationDirective implements Validator {
   validate(formGroup: FormGroup): { [key: string]: any } | null {
-    let addressControl = formGroup.controls['address'];
-    let cityControl = formGroup.controls['city'];
-    let countryControl = formGroup.controls['country'];
-    let imageUrlControl = (formGroup.root as FormGroup).controls['imageUrl'];
+    const addressControl = formGroup.controls['address'];
+    const cityControl = formGroup.controls['city'];
+    const countryControl = formGroup.controls['country'];
+    const imageUrlControl = (formGroup.root as FormGroup).controls['imageUrl'];
 
     if (
       (addressControl &&

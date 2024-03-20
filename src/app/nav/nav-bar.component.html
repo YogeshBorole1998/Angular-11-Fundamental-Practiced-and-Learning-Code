@@ -35,15 +35,16 @@
                     <li>
                         <a *ngIf="!auth.isAuthenticated()" [routerLink]="['user/login']">Login</a>
                         <a *ngIf="auth.isAuthenticated()" [routerLink]="['user/profile']">Welcome
-                            {{auth.currentUser.firstName}}</a>
+                            {{auth.currentUser?.firstName}}</a>
                     </li>
                 </ul>
             </div>
 
             <!-- Search form -->
-            <form id="searchForm" class="navbar-form navbar-right">
+            <form id="searchForm" (ngSubmit)="searchSessions(searchTerm)" class="navbar-form navbar-right">
                 <div class="form-group">
-                    <input type="text" class="form-control" placeholder="Search Sessions">
+                    <input [(ngModel)]="searchTerm" name="searchTerm" type="text" class="form-control"
+                        placeholder="Search Sessions">
                 </div>
                 <button class="btn btn-default">
                     Search

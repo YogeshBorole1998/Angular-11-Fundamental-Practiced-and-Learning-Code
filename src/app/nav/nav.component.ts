@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { EventService, Session } from '../events/index';
 import { AuthService } from '../user/auth.service';
 
 @Component({
@@ -30,5 +31,18 @@ import { AuthService } from '../user/auth.service';
   ],
 })
 export class NavBarComponent {
-  constructor(public auth: AuthService) {}
+  searchTerm: string = '';
+  foundSessions!: Session[];
+
+  constructor(public auth: AuthService, private eventService: EventService) {}
+
+  // when you search anything in searchbox and hit eneter you are able to see one array tat match in console
+  searchSessions(searchTerm: string) {
+    this.eventService
+      .searchSessions(searchTerm)
+      .subscribe((sessions: Session[]) => {
+        this.foundSessions = sessions;
+        console.log(this.foundSessions);
+      });
+  }
 }

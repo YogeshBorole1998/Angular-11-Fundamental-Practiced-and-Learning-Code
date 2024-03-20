@@ -4,7 +4,7 @@ import { IUser } from './user.model';
 @Injectable()
 export class AuthService {
   // Property to hold the current user information
-  currentUser!: IUser;
+  currentUser!: IUser | undefined;
 
   // Method to simulate user login
   loginUser(userName: string, password: string) {
@@ -22,7 +22,14 @@ export class AuthService {
   }
 
   updateCurrentUser(firstName: string, lastName: string) {
-    this.currentUser.firstName = firstName;
-    this.currentUser.lastName = lastName;
+    if (this.currentUser) {
+      this.currentUser.firstName = firstName;
+      this.currentUser.lastName = lastName;
+    }
+  }
+
+  logout() {
+    this.currentUser = undefined;
+    window.alert('Logged Out Successfully!');
   }
 }

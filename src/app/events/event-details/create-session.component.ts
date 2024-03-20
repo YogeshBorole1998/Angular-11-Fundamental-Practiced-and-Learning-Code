@@ -69,8 +69,14 @@ export class CreateSessionComponent implements OnInit {
     });
   }
 
-  saveSession(formValues: any) {
-    let session: Session = {
+  saveSession(formValues: {
+    name: string;
+    presenter: string;
+    duration: string | number;
+    level: string;
+    abstract: string;
+  }) {
+    const session: Session = {
       name: formValues.name,
       presenter: formValues.presenter,
       duration: +formValues.duration,
