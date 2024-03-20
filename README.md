@@ -3,7 +3,7 @@
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.1.8.
 
 <hr>
-➡️ You can access the deployed version of this project [here](https://angular-events-app.netlify.app/)
+➡️ You can access the deployed version of this project [here](https://angular-events-application.netlify.app) (opens in a new tab)
 <hr>
 
 ## Development server
