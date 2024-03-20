@@ -1,4 +1,4 @@
-# Angular-11-Fundamental-Practiced-and-Learning-Code
+# 🔶⭐ Angular-11-Fundamental Notes :
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.1.8.
 
@@ -22,26 +22,27 @@ Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.
 
 Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
 
-## Refer : 
+## Refer :
 
 [Angular-11 Free Course : Jim Cooper & Joe Eames](https://app.pluralsight.com/library/courses/angular-fundamentals)
 
-## UI Overview-Angular-App 
+## UI Overview-Angular-App
 
-1. Main Events Page : 
-image.png
+1. Main Events Page :
+   <img src="" alt="Image Description">
 
 2. Create Events Page :
-image.png
+   image.png
 
 3. Login Profile Page :
-image.png
+   image.png
 
 4. Update Profile Page :
-image.png
+   image.png
 
 5. Event Detail Page :
-image.png
+   image.png
 
-## Unit Tests Report 
-image.png
+## Unit Tests Report
+
+<img src="Unit-tests-report.png" alt="Unit tests report">
