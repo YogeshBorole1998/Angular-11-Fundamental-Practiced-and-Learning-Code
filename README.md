@@ -1,4 +1,4 @@
-# 🔶 Angular-11-Fundamental Notes :
+# ◼️Angular-11-Fundamental :
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.1.8.
 
@@ -28,24 +28,31 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 
 <a href="Angular-11-Fundamental-Notes.pdf" target="_blank">Refer Angular-11 Notes</a>
 
+<hr>
 ## UI Overview-Angular-App
 
 1. Main Events Page :
+
    <img src="Events-Main-Page.png" alt="Events-Main-Page">
 
 2. Create Events Page :
+
    <img src="create-event-page.png" alt="create-event-page">
 
 3. Login Profile Page :
+
    <img src="login-profile-page.png" alt="login-profile-page">
 
 4. Update Profile Page :
+
    <img src="update-profile-page.png" alt="update profile page">
 
 5. Event Detail Page :
-   <img src="event-detail-page" alt="event-detail-page">
+
+   <img src="event-detail-page.png" alt="event-detail-page">
 
 6. Create Session Page :
+
    <img src="create-session-page.png" alt="create-session-page">
 
 ## Unit Tests Report
